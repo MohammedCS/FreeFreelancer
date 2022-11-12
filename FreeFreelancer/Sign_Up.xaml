@@ -1,0 +1,30 @@
+﻿<Window x:Class="FreeFreelancer.Sign_Up"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FreeFreelancer"
+        mc:Ignorable="d" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="Transparent" AllowsTransparency="True"
+        Height="450" Width="800">
+    <Border CornerRadius="20">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="1,0" EndPoint="0,1">
+                <GradientStop Color="#6272a4" Offset="0"/>
+                <GradientStop Color="#44475a" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Margin="25" Text="Sign Up Page" HorizontalAlignment="Center" FontSize="36" Foreground="#bd93f9"/>
+            <Label Content="User Name" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 10 0 5" Foreground="#ffb86c"/>
+            <TextBox BorderThickness="0 0 0 1" BorderBrush="#ffb86c" Background="Transparent" Width="200"/>
+            <Label Content="Password" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 10 0 5" Foreground="#ffb86c"/>
+            <TextBox BorderThickness="0 0 0 1" BorderBrush="#ffb86c" Background="Transparent" Width="200"/>
+            <Button Click="Sign_Up_Click_2" x:Name="Sign_Up_2" Style="{StaticResource button_style}" Margin="15" Content="Sign Up"/>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 -10 0 0"
+                       Foreground="#bd93f9">or you have account 
+                <Hyperlink Foreground="#ffb86c" Click="Sign_Up_Click_2" TextDecorations="None">Log_In Page</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Border>
+</Window>
